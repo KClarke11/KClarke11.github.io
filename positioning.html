@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Positioning</title>
+<style>
+    #container {
+        width: 800px;
+        height: 815px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #1E1920;
+        position: relative;
+    }
+    
+    #Grey {
+        height: 147px;
+        width: 147px;
+        background-color: #D3D6E7;
+        border-radius: 50%;
+        bottom: 185px;
+        right: 65px;
+        position: absolute;
+        z-index: 0
+    }
+
+    #RoyalBlue {
+        height: 360px;
+        width: 360px;
+        background-color: #0D34CF;
+        border-radius: 50%;
+        top: 130px;
+        left: 175px;
+        position: absolute;
+        z-index: 10
+    }
+
+    #Black {
+        height: 260px;
+        width: 260px;
+        background-color: #0F0B0A;
+        border-radius: 50%;
+        top: 150px;
+        left: 183px;
+        position: absolute;
+        z-index: 20
+    }
+    
+    #Pink {
+        height: 73px;
+        width: 70px;
+        background-color: #F996D9;
+        border-radius: 50%;
+        top: 110px;
+        left: 63px;
+        position: absolute;
+        z-index: 30
+    }
+
+    #Yellow {
+        height: 30px;
+        width: 30px;
+        background-color: #FFE858;
+        border-radius: 50%;
+        top: 50px;
+        left: 63px;
+        position: absolute;
+        z-index: 40
+    }
+
+    #LightYellow {
+        height: 65px;
+        width: 65px;
+        background-color: #FAE999;
+        border-radius: 50%;
+        top: 90px;
+        right: 183px;
+        position: absolute;
+        z-index: 50
+    }
+
+    #DarkYellow {
+        height: 40px;
+        width: 40px;
+        background-color: #FFB011;
+        border-radius: 50%;
+        top: 140px;
+        right: 103px;
+        position: absolute;
+        z-index: 60
+    }
+
+    #Red {
+        height: 25px;
+        width: 25px;
+        background-color: #E31C39;
+        border-radius: 50%;
+        top: 70px;
+        right: 63px;
+        position: absolute;
+        z-index: 70
+    }
+
+    #Blue {
+        height: 25px;
+        width: 27px;
+        background-color: #3694C8;
+        border-radius: 50%;
+        bottom: 70px;
+        right: 83px;
+        position: absolute;
+        z-index: 80
+    }
+
+    #Yellow2 {
+        height: 35px;
+        width: 35px;
+        background-color: #F3B816;
+        border-radius: 50%;
+        bottom: 180px;
+        right: 375px;
+        position: absolute;
+        z-index: 90
+    }
+
+    #Red2 {
+        height: 35px;
+        width: 35px;
+        background-color: #D92241;
+        border-radius: 50%;
+        bottom: 95px;
+        right: 173px;
+        position: absolute;
+        z-index: 100
+    }
+
+    #Yellow3 {
+        height: 20px;
+        width: 20px;
+        background-color: #F9DE2F;
+        border-radius: 50%;
+        bottom: 152px;
+        right: 158px;
+        position: absolute;
+        z-index: 110
+    }
+
+    #Blue2 {
+        height: 45px;
+        width: 45px;
+        background-color: #209ADD;
+        border-radius: 50%;
+        bottom: 115px;
+        left: 113px;
+        position: absolute;
+        z-index: 120
+    }
+
+    #Pink2 {
+        height: 20px;
+        width: 21px;
+        background-color: #FB97E0;
+        border-radius: 50%;
+        bottom: 170px;
+        left: 83px;
+        position: absolute;
+        z-index: 130
+    }
+
+    #DarkBlue {
+        height: 95px;
+        width: 95px;
+        background-color: #1C4064;
+        border-radius: 50%;
+        bottom: 315px;
+        left: 63px;
+        position: absolute;
+        z-index: 140
+    }
+
+    #IceBlue {
+        height: 87px;
+        width: 87px;
+        background-color: #87D7F0;
+        border-radius: 50%;
+        bottom: 319px;
+        left: 67px;
+        position: absolute;
+        z-index: 150
+    }
+
+    #Black2 {
+        height: 82px;
+        width: 82px;
+        background-color: #0F0B0A;
+        border-radius: 50%;
+        bottom: 321px;
+        left: 69px;
+        position: absolute;
+        z-index: 160
+    }
+
+    #GreyWolf {
+        height: 75px;
+        width: 75px;
+        background-color: #BFC3DC;
+        border-radius: 50%;
+        bottom: 325px;
+        left: 72.5px;
+        position: absolute;
+        z-index: 170
+    }
+
+    #SmallBlack {
+        height: 30px;
+        width: 30px;
+        background-color: #0F0B0A;
+        border-radius: 50%;
+        bottom: 363px;
+        left: 104px;
+        position: absolute;
+        z-index: 180
+    }
+
+    #LightBlue {
+        height: 30px;
+        width: 30px;
+        background-color: #ADE1DD;
+        border-radius: 50%;
+        bottom: 393px;
+        right: 59px;
+        position: absolute;
+        z-index: 190
+    }
+
+    #Blue3 {
+        height: 25px;
+        width: 25px;
+        background-color: #0737DF;
+        border-radius: 50%;
+        bottom: 396px;
+        right: 61.5px;
+        position: absolute;
+        z-index: 200
+    }
+
+    #Yellow4 {
+        height: 20px;
+        width: 20px;
+        background-color: #C7BB43;
+        border-radius: 50%;
+        bottom: 95px;
+        left: 63px;
+        position: absolute;
+        z-index: 210
+    }
+
+    #TinyBlack {
+        height: 16px;
+        width: 16px;
+        background-color: #05020B;
+        border-radius: 50%;
+        bottom: 97.5px;
+        left: 64px;
+        position: absolute;
+        z-index: 220
+    }
+
+    #YellowByBlue {
+        height: 17px;
+        width: 17px;
+        background-color: #F2DD2A;
+        border-radius: 50%;
+        bottom: 423px;
+        left: 180px;
+        position: absolute;
+        z-index: 230
+    }
+
+    #SmallBlackWYellow {
+        height: 13px;
+        width: 13px;
+        background-color: #110D0C;
+        border-radius: 50%;
+        bottom: 425px;
+        left: 181px;
+        position: absolute;
+        z-index: 240
+    }
+
+    #BlackByBlue {
+        height: 16px;
+        width: 16px;
+        background-color: #010A09;
+        border-radius: 50%;
+        bottom: 343px;
+        left: 238px;
+        position: absolute;
+        z-index: 250
+    }
+
+    #SmallPinkWBlack {
+        height: 11px;
+        width: 11px;
+        background-color: #DC557E;
+        border-radius: 50%;
+        bottom: 346px;
+        left: 241px;
+        position: absolute;
+        z-index: 260
+    }
+
+    #SmallPinkInBlue {
+        height: 11px;
+        width: 11px;
+        background-color: #D7AFE4;
+        border-radius: 50%;
+        bottom: 346px;
+        left: 270px;
+        position: absolute;
+        z-index: 270
+    }
+
+    #SmallBlackInGrey {
+        height: 11px;
+        width: 11px;
+        background-color: #0B0207;
+        border-radius: 50%;
+        bottom: 311px;
+        right: 110px;
+        position: absolute;
+        z-index: 280
+    }
+
+    #SmallRedInGrey {
+        height: 20px;
+        width: 21px;
+        background-color: #DC141E;
+        border-radius: 50%;
+        bottom: 307px;
+        right: 125px;
+        position: absolute;
+        z-index: 290
+    }
+
+    #SmallIceBlueInGrey {
+        height: 47px;
+        width: 47px;
+        background-color: #94E0E0;
+        border-radius: 50%;
+        bottom: 240px;
+        right: 145px;
+        position: absolute;
+        z-index: 300
+    }
+
+    #LightYellowBehindBlue {
+        height: 55px;
+        width: 55px;
+        background-color: #F0D9BA;
+        border-radius: 50%;
+        bottom: 236px;
+        right: 141px;
+        position: absolute;
+        z-index: 295
+    }
+
+    #LavendarOverlap {
+        height: 93px;
+        width: 93px;
+        background-color: #dca2ee69;
+        border-radius: 50%;
+        top: 119px;
+        left: 370px;
+        position: absolute;
+        z-index: 310
+    }
+    
+    #LavendarUnderlay {
+        height: 93px;
+        width: 93px;
+        background-color: #dca2ee;
+        border-radius: 50%;
+        top: 119px;
+        left: 370px;
+        position: absolute;
+        z-index: 5
+    }
+
+    #RedBase {
+        height: 70px;
+        width: 70px;
+        background-color: #E11F3A;
+        border-radius: 50%;
+        bottom: 225px;
+        left: 153px;
+        position: absolute;
+        z-index: 320
+    }
+
+    #LightYellowBase {
+        height: 70px;
+        width: 70px;
+        background-color: #fef5beab;
+        border-radius: 50%;
+        bottom: 235px;
+        left: 119px;
+        position: absolute;
+        z-index: 330
+    }
+
+    #YellowBase {
+        height: 70px;
+        width: 70px;
+        background-color: #fdeb469f;
+        border-radius: 50%;
+        bottom: 235px;
+        left: 119px;
+        position: absolute;
+        z-index: 340
+    }
+
+    #YellowBase2 {
+        height: 70px;
+        width: 70px;
+        background-color: #fdeb46;
+        border-radius: 50%;
+        bottom: 235px;
+        left: 119px;
+        position: absolute;
+        z-index: 315
+    }
+
+    #WhiteBase {
+        height: 70px;
+        width: 70px;
+        background-color: rgba(255, 255, 255, 0.452);
+        border-radius: 50%;
+        bottom: 225px;
+        left: 190px;
+        position: absolute;
+        z-index: 350
+    }
+
+    #YellowBase {
+        height: 70px;
+        width: 70px;
+        background-color: #fdeb469f;
+        border-radius: 50%;
+        bottom: 235px;
+        left: 119px;
+        position: absolute;
+        z-index: 360
+    }
+
+    #BrownBase {
+        height: 70px;
+        width: 70px;
+        background-color: #984E35;
+        border-radius: 50%;
+        bottom: 225px;
+        left: 190px;
+        position: absolute;
+        z-index: 316
+    }
+
+
+
+</style>
+</head>
+<body style="background-color:white;">
+<div id="container">
+<div id="Grey">&nbsp;</div>
+<div id="RoyalBlue">&nbsp;</div>
+<div id="Black">&nbsp;</div>
+<div id="Pink">&nbsp;</div>
+<div id="Yellow">&nbsp;</div>
+<div id="LightYellow">&nbsp;</div>
+<div id="DarkYellow">&nbsp;</div>
+<div id="Red">&nbsp;</div>
+<div id="Blue">&nbsp;</div>
+<div id="Yellow2">&nbsp;</div>
+<div id="Red2">&nbsp;</div>
+<div id="Yellow3">&nbsp;</div>
+<div id="Blue2">&nbsp;</div>
+<div id="Pink2">&nbsp;</div>
+<div id="DarkBlue">&nbsp;</div>
+<div id="IceBlue">&nbsp;</div>
+<div id="Black2">&nbsp;</div>
+<div id="GreyWolf">&nbsp;</div>
+<div id="SmallBlack">&nbsp;</div>
+<div id="LightBlue">&nbsp;</div>
+<div id="Blue3">&nbsp;</div>
+<div id="Yellow4">&nbsp;</div>
+<div id="TinyBlack">&nbsp;</div>
+<div id="YellowByBlue">&nbsp;</div>
+<div id="SmallBlackWYellow">&nbsp;</div>
+<div id="BlackByBlue">&nbsp;</div>
+<div id="SmallPinkWBlack">&nbsp;</div>
+<div id="SmallPinkInBlue">&nbsp;</div>
+<div id="SmallBlackInGrey">&nbsp;</div>
+<div id="SmallRedInGrey">&nbsp;</div>
+<div id="SmallIceBlueInGrey">&nbsp;</div>
+<div id="LightYellowBehindBlue">&nbsp;</div>
+<div id="LavendarOverlap">&nbsp;</div>
+<div id="LavendarUnderlay">&nbsp;</div>
+<div id="RedBase">&nbsp;</div>
+<div id="LightYellowBase">&nbsp;</div>
+<div id="YellowBase">&nbsp;</div>
+<div id="YellowBase2">&nbsp;</div>
+<div id="WhiteBase">&nbsp;</div>
+<div id="BrownBase">&nbsp;</div>
+<div id="">&nbsp;</div>
+
+
+</div>
+</body>
+</html>

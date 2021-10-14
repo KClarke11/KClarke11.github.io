@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Positioning</title>
+<style>
+    #container {
+        width: 800px;
+        height: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(124, 124, 124, 1);
+        position: relative;
+    }
+    
+    #red {
+        background-color: red;
+        position: absolute;
+        height: 100px;
+        width: 400px;
+        top: 25px;
+        left: 40px;
+        z-index: 0;
+    }
+
+    #green {
+        background-color: rgba(0, 255, 0, .5);
+        position: absolute;
+        height: 400px;
+        width: 100px;
+        top: 25px;
+        left: 90px;
+        z-index: 5;
+    }
+    
+    #blue {
+        background-color: rgba(0, 0, 255, .5);
+        position: absolute;
+        height: 400px;
+        width: 100px;
+        top: 25px;
+        left: 40px;
+        z-index: 10;
+    }
+    
+    #blueCircle {
+        height: 200px;
+        width: 200px;
+        background-color: royalblue;
+        border-radius: 50%;
+        bottom: 0;
+        left: 50%;
+        position: absolute;
+    }
+    
+    #trap {
+        border-bottom: 50px solid #fff;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        height: 0;
+        width: 125px;
+        z-index: 100;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+    }
+
+    #para {
+        position: absolute;
+        width: 400px;
+        height: 100px;
+        background-color: rgba(128, 128, 0, .3);
+        top: 200px;
+        left: 33%;
+        z-index: 110;
+        transform: skew(25deg);
+    }
+
+</style>
+</head>
+<body style="background-color:white;">
+<div id="container">
+<div id="red">&nbsp;</div>
+<div id="blue">&nbsp;</div>
+<div id="green">&nbsp;</div>
+<div id="blueCircle">&nbsp;</div>
+<div id="trap">&nbsp;</div>
+<div id="para">&nbsp;</div>
+
+</div>
+</body>
+</html>

@@ -14,70 +14,65 @@
             color: rgb(34, 87, 122);
             font-size: 2.1em;
         }
-   ul {
+
+        .text {
+            color:black;
+            text-indent: 50px
+            padding-top: 50px;
+            padding-right: 80px;
+            padding-left: 80px;
+            text-align: center;
+        }
+
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  width: 200px;
   background-color: rgb(128, 237, 153);
-}
-
-li {
-  float: left;
+  border: 1px solid black;
 }
 
 li a {
   display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+  color: rgb(34, 87, 122);
+  padding: 8px 16px;
   text-decoration: none;
 }
 
-li a:hover {
-  background-color:rgb(87, 204, 153);
+li {
+  text-align: center;
+  border-bottom: 1px solid rgb(126, 126, 126);
 }
 
-/* unvisited link */
-a:link {
-  color: rgb(199, 249, 204);
-  text-decoration: underline;
+li:last-child {
+  border-bottom: none;
 }
 
-/* visited link */
-a:visited {
-  color:rgb(34, 87, 122);
+li a.active {
+  background-color: #04AA6D;
+  color: white;
 }
 
-/* mouse over link */
-a:hover {
-  color: rgba(34, 87, 122, 1);
-  background-color: rgba(56, 183, 165, 1);
+li a:hover:not(.active) {
+  background-color: rgb(87, 204, 153);
+  color: white;
 }
 
-/* selected link */
-a:active {
-  color: rgb(199, 249, 204);
-}
 </style>
 
 <body style="background-color:rgb(199, 249, 204)">
     <h1 class="navandtitle">PORTFOLIO OF KALEY CLARKE</h1>
 
-    <ul>
-        <li><a class="active" href="bio.html">bio</a></li>
-        <li><a href="mbs.html">mbs project</a></li>
-        <li><a href="ps-challenge.html">drawing with code</a></li>
-        <li><a href="index.html">index</a></li>
-    </ul>
+   <h3 style="text-align: center; color: rgb(34, 87, 122); font-size: 1.5em;">INDEX</h3>
+        <p class="text">The purpose of this website is to document all of my work and projects from my class ART2602C Intro to Digital Studio Practice fall 2021. Everything is here in one place along with links to all the pages located in this index for easier findings. </p>
 
-    <h2 style="color:black;font-family:Georgia, 'Times New Roman', Times, serif;text-align: center;"
-        <p>The purpose of this website is to document all of my work and projects from my class ART2602C Intro to Digital Studio Practice fall 2021. Everything will be here in one place along with links to all pages located in this index for easier findings. </p>
-<img src="purplewaves.jpg" width="300" height="200" alt="purple waves">
-<br>
-<img src="purple.jpg" width="300" height="200" alt="purple neon sign">
-<p><a style="color:black" href="bio.html">My Bio</a></p>
-<p><a style="color:black" href="mbs.html">Mind, Body, Spirit Project</a></p>
-<p><a style="color:black" href="ps-challenge.html">Photoshop Challenge</a></p>
+      <ul style="margin: auto;">
+          <li><a class="active" href="bio.html">bio</a></li>
+          <li><a href="mbs.html">mbs project</a></li>
+          <li><a href="positioning.html">painting by css</a></li>
+          <li><a href="index.html">index</a></li>
+      </ul>
+
 </body>
 </html>

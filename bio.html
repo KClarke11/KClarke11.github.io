@@ -1,15 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Biography</title>
+    <title>Biography</title>
+    <style>
+        body{
+            background-color:rgb(199, 249, 204);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:black;
+        }
+        .navandtitle {
+            text-align: center;
+            color: rgb(34, 87, 122);
+            font-size: 2.1em;
+        }
+        
+        .text {
+            color:black;
+            text-indent: 50px
+            padding-top: 50px;
+            padding-right: 80px;
+            padding-left: 80px;
+        }
+
+        .BackgroundImage {
+        width: 600px;
+        height: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+        /* unvisited link */
+a:link {
+  color: rgb(34, 87, 122);
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color:rgb(34, 87, 122);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgba(34, 87, 122, 1);
+  background-color: rgba(56, 183, 165, 1);
+}
+
+/* selected link */
+a:active {
+  color: rgb(199, 249, 204);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(128, 237, 153);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:rgb(87, 204, 153);
+}
+
+    </style>
 </head>
-<body style="background-color:lightgreen">
-    <h1 style="color:limegreen;font-size:3.25em;text-align: center;">BIO OF KALEY CLARKE</h1>
-    <h2 style="color:cornsilk;font-family:Georgia, 'Times New Roman', Times, serif;text-align: center;"
-        <p>My name is Kaley Clarke. I was born in Fort Walton Beach, Florida, but grew up in Newnan, Georgia, till I was 18. I obtained 33 college credit hours in high school through dual enrollment focusing mainly on academic classes, so I could go straight into my major upon my first year of college. I went to the University of West Georgia for my sophomore year, aka my first year of college, and took the rest of my academic classes for my degree there and then went into all art classes my second semester. My major is Graphic Design, but I am looking into double majoring in Art Administration to have experience in that for future jobs. I am a huge fan of the Florida Gators and really enjoy watching football. I also have a black lab that I love very much. </p>
-<img src="gators.jpg" width="300" height="200" alt="Florida Gators Logo">
-<br>
+<body>
+<h1 class="navandtitle">PORTFOLIO OF KALEY CLARKE</h1>
+
+
+<ul>
+    <li><a class="active" href="bio.html">bio</a></li>
+    <li><a href="mbs.html">mbs project</a></li>
+    <li><a href="positioning.html">painting by css</a></li>
+    <li><a href="net-art.html">net.art</a></li>
+    <li><a href="3d-project.html">3D modeling & electronics</a></li>
+    <li><a href="index.html">index</a></li>
+</ul>
+
+<h2 class="navandtitle">BIOGRAPHY</h2>
+
+
+<p class="text">My name is Kaley Clarke. I was born in Fort Walton Beach, Florida, but grew up in Newnan, Georgia, till I was 18. I obtained 33 college credit hours in high school through dual enrollment focusing mainly on academic classes, so I could go straight into my major upon my first year of college. I went to the University of West Georgia for my sophomore year, aka my first year of college, and took the rest of my academic classes for my degree there and then went into all art classes my second semester. My major is Graphic Design, but I am looking forward to taking more Digital Arts classes as electives for my degree. I am a huge fan of the Florida Gators and really enjoy watching football, or really any sport. I also have a black lab that I love very much. <br><br>
+
+<div> <center>
 <img src="AJ.jpg" width="200" height="300" alt="AJ">
-<p><a style="color:black" href="index.html">Index</a></p>
+</center></div> 
+    
+</p>
 </body>
 </html>
